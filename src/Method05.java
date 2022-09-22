@@ -48,6 +48,31 @@ public class Method05 {
 
         Car5 k7 = new Car5("K7", "세단", "준대형");
         k7.getInfo();
+        k7.getInfo("전기");
+        k7.getInfo("가솔린", 4000);
+        k7.getInfo("가솔린", "4000");
+        k7.getInfo(4000, "경유");
+
+        sum(10, 20);
+        sum(3.14, 5.28);
+    }
+
+    public static void sum(int a, int b) {
+        int result = a + b;
+        System.out.println("두 수의 덧셈은 " + result + "입니다.");
+    }
+
+    public static void sum(double a, double b) {
+        double result = a + b;
+        System.out.println("두 수의 덧셈은 " + result + "입니다.");
+    }
+
+    public static void sum(int a, double b) {
+
+    }
+
+    public static void sum(double a, int b) {
+
     }
 }
 
